@@ -1,0 +1,138 @@
+body{
+  margin: 0;
+  color: #40514E;
+  text-align: center;                      /* centers those who are occupying full width (like h1 without width) or inline elements*/
+  font-family: 'Montserrat', sans-serif;    /* here sans-serif is run when someone's browser cannot run verdana */
+}
+h1{
+  font-size: 562.5%;        /* if we use percentage or em, the sizing is dynamic but static if we use 'px'. Also 16px = 100% = 1em.
+                            percentage and em also inherit values from their parent elements. If for eg we add font-size of 200% or
+                            2 em to body tag, the size of h1 tag then would be (5.625 + 2)em or (562.5 + 200)%. So to avoid this,
+                            we use 'rem' or 'root em'. This doesn't allow inheritimg the values from the parent */
+
+  margin-top: 0;           /* if width is set like 20% here for h1, we gotta use margin: auto; for centering */
+  color: #66BFBF;
+  font-family: 'Sacramento', cursive;
+  margin: 50px auto 0 auto;
+}
+h2{
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+h3{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+p{
+  line-height: 2;
+}
+
+hr{
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+.top-container{
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 100px;
+}
+.middle-container{
+  padding: 100px 0;
+
+}
+.bottom-container{
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.lear{
+  text-decoration: underline;
+}
+.intro{
+  width: 30%;
+  margin: auto;
+}
+
+.contact-message{
+  width: 40%;
+  margin: 40px auto;
+}
+.top-cloud{
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+.bottom-cloud{
+  position: absolute;
+  bottom: 200px;
+  left: 300px;
+}
+
+.skill-row{
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+}
+
+.code-img{
+  width: 20%;
+  float: left;              /* try to use float only when wrapping around text, like in this example. */
+  margin-right: 30px;
+}
+
+.chilli-img{
+  width: 20%;
+  float: right;
+  margin-left: 30px;
+}
+.footer-link{
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px;
+  color: #11999E;
+}
+.footer-link:hover{
+  color: #EAF6F6;
+}
+.copyright{
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+/* .clear-example{
+  clear: left;                  'clear' example. remove the commenst to see how it works.
+}
+.clear-example2{
+  clear: right;
+} */
+.btn {
+  background: #11CDD4;
+  background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+  background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30E3CB;
+  background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
+  text-decoration: none;
+}
